@@ -1,0 +1,19 @@
+#!/bin/env direnv
+
+# shellcheck disable=SC1008
+
+# shellcheck disable=SC2034
+DIRENV_ROOT_DIR="$(dirname "${BASH_SOURCE[0]}")"
+
+# get it from horizon access management page <https://www.ovh.com/manager/public-cloud/> "Users and Roles"
+OS_TENANT_ID="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+OS_TENANT_NAME="XXXXXXXXXXXXXXXX"
+OS_USERNAME="user-XXXXXXXXXXXX"
+OS_PASSWORD="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+OS_REGION_NAME="XXXX"
+
+KUBECONFIG="$(realpath ../../.secrets/dev.kubeconfig)"
+KUBE_CONFIG_PATH="$KUBECONFIG"
+
+export OS_TENANT_ID OS_TENANT_NAME OS_USERNAME OS_PASSWORD OS_REGION_NAME
+export KUBECONFIG KUBE_CONFIG_PATH

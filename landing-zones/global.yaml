@@ -1,0 +1,14 @@
+customer:
+  name: acme.net
+  domain: acme.net
+
+project:
+  name: acme
+
+ovh:
+  endpoint: ovh-eu
+
+tfstates:
+  bucket: hk-terraform-states
+  endpoint: s3.gra.io.cloud.ovh.net
+  region: gra
