@@ -1,0 +1,21 @@
+#!/bin/env direnv
+
+# shellcheck disable=SC1008
+
+DIRENV_ROOT_DIR="$(dirname "${BASH_SOURCE[0]}")"
+ROOT_DIR="$(realpath "${DIRENV_ROOT_DIR}")"
+
+INFRACOST_API_KEY="ico-xxxxxxxxxxxxxxxxxxxx"
+
+TF_CLI_CONFIG_FILE="$(realpath "${DIRENV_ROOT_DIR}/.terraformrc")"
+
+TG_PROVIDER_CACHE=1
+TG_PROVIDER_CACHE_DIR="$(realpath "${DIRENV_ROOT_DIR}")/.terragrunt-cache/terragrunt/providers"
+TG_NO_AUTO_INIT=0
+TG_NON_INTERACTIVE=0
+TG_QUEUE_EXCLUDE_EXTERNAL=1
+
+export ROOT_DIR
+export INFRACOST_API_KEY
+export TF_CLI_CONFIG_FILE
+export TG_PROVIDER_CACHE TG_PROVIDER_CACHE_DIR TG_NO_AUTO_INIT TG_NON_INTERACTIVE TG_QUEUE_EXCLUDE_EXTERNAL
