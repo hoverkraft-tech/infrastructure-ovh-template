@@ -11,7 +11,9 @@
     },
     "ghcr.io/hoverkraft-tech/devcontainers/asdf:1": {},
     "ghcr.io/christophermacgown/devcontainer-features/direnv:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": false
+    },
     "ghcr.io/devcontainer-community/devcontainer-features/chezmoi.io:1": {}
   },
   "postStartCommand": ["bash", ".devcontainer/scripts/post-start.sh"],
