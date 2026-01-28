@@ -1,6 +1,6 @@
 checkov 3.2.477
 infracost 0.10.42
-terraform 1.13.4
+terraform 1.13.1
 terraform-docs 0.16.0
 terraform-ls 0.38.2
 terragrunt 0.86.2
